@@ -9,10 +9,14 @@ import Contact from "./pages/Contact";
 
 import Navbar from "./components/common/Navbar";
 import Footer from "./components/common/Footer";
+import ScrollToTop from "./components/common/ScrollToTop";
+import WhatsAppFloat from "./components/common/WhatsAppFloat";
 
 function App() {
   return (
     <BrowserRouter>
+
+     <ScrollToTop />  
       <Navbar />
 
       <Routes>
@@ -24,6 +28,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
  <Footer />
+ <WhatsAppFloat />
     </BrowserRouter>
   );
 }
